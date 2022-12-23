@@ -6,6 +6,8 @@ function getComputerChoice() {
 getComputerChoice();
 let gameResult = "tie";
 let winner;
+let playerscore = 0;
+let computerscore = 0;
 
 function displaytie() {
     document.getElementById("result").innerHTML = "The result is a tie."
@@ -13,10 +15,18 @@ function displaytie() {
 
 function displaywin() {
     document.getElementById("result").innerHTML = "Congrats! You win this round."
+    winner = "user"
+    playerscore++;
 }
 
 function displayloss() {
     document.getElementById("result").innerHTML = "Sorry... you lose this round."
+    winner = "computer"
+    computerscore++;
+}
+
+function displayscore() {
+    document.getElementById("scores").innerHTML = "The score right now is" + playerscore + "-" + computerscore;
 }
 
 document.getElementById("rock").addEventListener("click", rockRound);
