@@ -1,0 +1,29 @@
+* {
+    font-size: 20px;
+    background-color: black;
+    color: antiquewhite;
+}
+.p {
+    padding: 5px;
+    margin: 5px;
+}
+.intro {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
